@@ -1,4 +1,4 @@
-package testVagrant.solution;
+package testVagrant;
 
 public class Main {
     public static void main(String[] args) {
