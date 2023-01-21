@@ -18,11 +18,11 @@ public class BaseTest {
     public static Properties confProp;
     public static String jaywayPathForRcbForeignPlayers,jaywayPathForWicketKeeperCount;
     public static String filePathForJson="src\\main\\resources\\JsonFiles\\RCBResponse.json";
+    public static String filePathForProperties="src\\main\\resources\\Config\\jawaypaths.properties";
 
     static {
         try {
-            confProp = getProperties("src/main/resources/Config/jawaypaths.properties");
-
+            confProp = getProperties(filePathForProperties);
         } catch (Exception e) {
             e.printStackTrace();
         }
