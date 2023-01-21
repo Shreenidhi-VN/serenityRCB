@@ -6,6 +6,7 @@ import org.junit.runners.Suite;
 
 @RunWith(Suite.class)
 @Suite.SuiteClasses( {
+        //Here we list all the tests that need to be executed as a part of this suite
     RCBTests.class,
 })
 

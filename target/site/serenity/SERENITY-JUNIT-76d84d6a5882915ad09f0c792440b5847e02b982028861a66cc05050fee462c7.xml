@@ -1,7 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="2" failures="0" name="APITests.RCBTests" skipped="0" tests="2" time="1.41" timestamp="2023-01-20 08:33:42"><testcase classname="APITests.RCBTests" name="Make sure there is at least one wicket keeper in the team sheet"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-APISteps.RCBSteps.readParticularData(RCBSteps.java:28)&#13;
-APITests.RCBTests.WicketKeeperTest(RCBTests.java:31)&#13;
-</system-err></testcase><testcase classname="APITests.RCBTests" name="Make sure there are only four foreign players in the team sheet"><error type="java.lang.NullPointerException"/><system-err>null&#13;
-APISteps.RCBSteps.readParticularData(RCBSteps.java:28)&#13;
-APITests.RCBTests.ForeignPlayersCountTest(RCBTests.java:24)&#13;
-</system-err></testcase></testsuite>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="APITests.RCBTests" skipped="0" tests="2" time="1.37" timestamp="2023-01-21 11:33:55"><testcase classname="APITests.RCBTests" name="Write a test that validates that there is at least one wicket keeper"/><testcase classname="APITests.RCBTests" name="Write a test that validates that team has only 4 foreign players"/></testsuite>
