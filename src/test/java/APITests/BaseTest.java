@@ -9,6 +9,7 @@ import org.junit.BeforeClass;
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
 import java.util.Properties;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -91,5 +92,16 @@ public class BaseTest {
             logger(msg, msg + String.format("-Comparing [%s] and [%s]", expected, actual));
             assertThat(actual).withFailMessage(msg, "expected [%s] is equal to [%s]", expected, actual).isEqualTo(expected);
         }
+    }
+
+    public String printNames(List names) {
+        //concatenate names in the list with commas and "and"
+        String name = "";
+        for (int i = 0; i < names.size(); i++)
+            if (i == names.size() - 1)
+                name = name.length() == 0 ? names.get(i).toString() : (name + " and " + names.get(i));//if there is only one name in the list, and is not needed, just the one name
+            else
+                name= name.length() == 0 ? names.get(i).toString() : (name + ", " + names.get(i));//commas are not needed in the beginning.
+        return name;
     }
 }
