@@ -34,7 +34,7 @@ public class RCBSteps extends BaseTest {
     @Step("In the JSON file make sure that there is at least one wicket keeper")
     public void teamHasAtLeastOneWicketKeeper() {
         serenityReports.reportDataAsContent("The wicket keepers are/is ", printNames(wicketKeepers));
-        CustomAsserts.assertTrue("Is there at least one wicket keeper? and it is: ", wicketKeepers.size() >= 1);
+        CustomAsserts.assertTrue("Is there at least one wicket keeper?", wicketKeepers.size() >= 1);
     }
 
 
